@@ -29,25 +29,36 @@ background: #68ba55;
 background: #5f9e50;
 }
 .outputItem {
-display:flex;
 padding: 0;
 height: 11vw;
 align-self: end;
 grid-column-start: 2;
 grid-column-end: 5;
-align-items: flex-end;
-flex-flow: column;
-justify-content: flex-end;
+background: #65C944;
+display: grid;
 }
 
-.outputItem .output, .outputItem .outputInput{
+#active {
+  grid-column-start: 1;
+  grid-column-end: 2;
   border: none;
   color: white;
   font-size: 3vw;
-  background: #65C944;
   text-align: right;
   height: 6vw;
   width: 28.5vw;
+}
+
+#inactive {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 1vw;
+  text-align: left;
+}
+
+#operator {
+  font-size: 1vw;
+
 }
 .operator {
   background: #7CD868;
