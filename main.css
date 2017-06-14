@@ -1,0 +1,63 @@
+
+input:focus{
+  outline: none;
+}
+.container {
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 3vw;
+  left: 32%;
+  width: 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1px;
+}
+.gridItem {
+  color: white;
+  height: 3vw;
+  background: #64B255;
+  font-size: 2.5vw;
+  padding: 4vw;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.clear:hover, .number:hover, .equal:hover, .decimal:hover {
+background: #68ba55;
+}
+.clear:active, .number:active, .equal:active, .decimal:active {
+background: #5f9e50;
+}
+.outputItem {
+display:flex;
+padding: 0;
+height: 11vw;
+align-self: end;
+grid-column-start: 2;
+grid-column-end: 5;
+align-items: flex-end;
+flex-flow: column;
+justify-content: flex-end;
+}
+
+.outputItem .output, .outputItem .outputInput{
+  border: none;
+  color: white;
+  font-size: 3vw;
+  background: #65C944;
+  text-align: right;
+  height: 6vw;
+  width: 28.5vw;
+}
+.operator {
+  background: #7CD868;
+  color: darkgreen;
+}
+
+.operator:hover {
+  background: #5bba64;
+}
+
+.operator:active{
+  background: #418e48;
+}
